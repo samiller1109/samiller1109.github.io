@@ -5,9 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sarah Miller's Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 40px;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    .project {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, I'm Sarah Miller!</h1>
-  <p>Welcome to my GitHub Pages site.</p>
+
+<header>
+  <h1>Sarah Miller's Portfolio</h1>
+  <p>Computer Science student passionate about Data Science and Software Development.</p>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>I am currently pursuing my Bachelor's in Computer Science at the University of Tennessee at Chattanooga, focusing on Data Science and Software Engineering. Here are some of my notable projects.</p>
+</section>
+
+<section>
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Character-Level Text Generation (LSTM)</h3>
+    <p>An LSTM-based neural network trained on Jane Austen's "Pride and Prejudice" to generate coherent text snippets.</p>
+    <a href="https://github.com/samiller1109/text-generation" target="_blank">View Project</a>
+  </div>
+
+  <div class="project">
+    <h3>Convolutional Autoencoder Image Upscaler</h3>
+    <p>A convolutional autoencoder that upscales small images of cats and dogs to higher resolutions.</p>
+    <a href="https://github.com/samiller1109/image-upscaler" target="_blank">View Project</a>
+  </div>
+
+  <div class="project">
+    <h3>MLP Hyperparameter Optimization with Talos</h3>
+    <p>Systematic hyperparameter tuning of a neural network on the CIFAR-100 dataset using Talos.</p>
+    <a href="https://github.com/samiller1109/mlp-talos" target="_blank">View Project</a>
+  </div>
+
+  <div class="project">
+    <h3>Inventory Management Optimization</h3>
+    <p>A data-driven analysis of inventory management systems for improved forecasting and resource allocation.</p>
+    <a href="https://github.com/samiller1109/inventory-management" target="_blank">View Project</a>
+  </div>
+
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:samiller1109@gmail.com">samiller1109@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/samiller1109">github.com/samiller1109</a></p>
+</section>
+
 </body>
 </html>
