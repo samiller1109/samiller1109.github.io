@@ -1,0 +1,100 @@
+/* styles.css */
+
+:root {
+  --bg:    #f8f8f8;
+  --fg:    #333;
+  --accent:#007ACC;
+  --card:  #fff;
+  --radius:8px;
+  --spacing:1.5rem;
+  --shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--spacing);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: var(--spacing);
+}
+
+/* Sections */
+h2 {
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+}
+
+section {
+  margin-bottom: var(--spacing);
+}
+
+/* Project grid */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: var(--spacing);
+}
+
+/* Project cards */
+.project {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform .2s, box-shadow .2s;
+}
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+.project h3 {
+  margin-bottom: 0.75rem;
+}
+.project ul {
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+}
+.project a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #fff;
+  background: var(--accent);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background .2s;
+}
+.project a:hover {
+  background: darken(var(--accent),10%);
+}
+
+/* Links */
+a {
+  color: var(--accent);
+}
+a:hover { text-decoration: underline; }
+
+/* Footer/contact */
+footer {
+  text-align: center;
+  margin-top: var(--spacing);
+  font-size: 0.9rem;
+}
