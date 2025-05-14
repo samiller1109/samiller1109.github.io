@@ -1,119 +1,239 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The World’s Oldest Businesses | Project Showcase</title>
+
+  <link rel="shortcut icon" type="image/icon" href="../assets/logo/favicon.png" />
+  <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/flaticon.css">
+  <link rel="stylesheet" href="../assets/css/animate.css">
+  <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/bootsnav.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
+    .project-hero {
+      background: url('../assets/images/about/business_banner.png') no-repeat center center;
+      background-size: cover;
+      position: relative;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    header {
-      background-color: #004080;
-      color: white;
-      padding: 40px 20px;
+
+    .project-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(31, 44, 108, 0.65);
+      z-index: 1;
+    }
+
+    .project-hero .hero-text {
+      position: relative;
+      z-index: 2;
+      color: #fff;
       text-align: center;
     }
+
+    .project-hero .hero-text h2 {
+      color: #fff;
+      font-size: 48px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .project-hero .hero-text p {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
     section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
-    h1, h2 {
+
+    h2 {
       color: #004080;
     }
+
     img {
       max-width: 100%;
       display: block;
       margin: 20px 0;
     }
+
     pre {
       background: #eee;
       padding: 10px;
       overflow-x: auto;
     }
+
     .key-takeaways ul {
       padding-left: 20px;
     }
+
+    .project-btn {
+      display: inline-block;
+      background-color: #b636ff;
+      color: white;
+      border: 1px solid #b636ff;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      width: 100%;
+      transition: 0.3s ease;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .project-btn:hover {
+      background-color: #9f00ff;
+      border-color: #9f00ff;
+      color: #fff;
+    }
+
     footer {
       background-color: #222;
       color: white;
       text-align: center;
       padding: 20px;
     }
+
+    .return-btn {
+      width: 250px;
+      margin-top: 30px;
+    }
   </style>
 </head>
+
 <body>
+  <!-- Navigation -->
+  <header class="top-area">
+    <div class="header-area">
+      <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+              <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="../index.html">sarah miller</a>
+          </div>
+          <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+              <li><a href="../index.html#education">education</a></li>
+              <li><a href="../index.html#skills">skills</a></li>
+              <li><a href="../index.html#experience">experience</a></li>
+              <li><a href="../index.html#portfolio">portfolio</a></li>
+              <li><a href="../index.html#contact">contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-<header>
-  <h1>The World’s Oldest Businesses</h1>
-  <p>A SQL and Python Data Storytelling Project</p>
-</header>
+  <!-- Hero Section -->
+  <section class="project-hero">
+    <div class="container text-center">
+      <div class="hero-text">
+        <h2>The World’s Oldest Businesses</h2>
+        <p>A SQL and Python Data Storytelling Project</p>
+      </div>
+    </div>
+  </section>
 
-<section>
-  <h2>Project Summary</h2>
-  <p>This project explores the longevity of businesses using data from BusinessFinancing.co.uk. It analyzes the industries, continents, and trends of the oldest still-operating companies, some founded before 1000 AD.</p>
-</section>
+  <!-- Project Summary -->
+  <section>
+    <h2>Project Summary</h2>
+    <p>This project explores the longevity of businesses using data from BusinessFinancing.co.uk. It analyzes the industries, continents, and trends of the oldest still-operating companies, some founded before 1000 AD.</p>
+  </section>
 
-<section>
-  <h2>Interactive Timeline</h2>
-  <img src="timeline.png" alt="Timeline of Companies Founded Before 1000 AD">
-  <p>This timeline visualizes companies founded before 1000 AD, color-coded by name. Each dot represents one business, and the key (legend) helps you identify them.</p>
-</section>
+  <!-- Interactive Timeline -->
+  <section>
+    <h2>Interactive Timeline</h2>
+    <img src="timeline.png" alt="Timeline of Companies Founded Before 1000 AD">
+    <p>This timeline visualizes companies founded before 1000 AD, color-coded by name. Each dot represents one business, and the key (legend) helps you identify them.</p>
+  </section>
 
-<section>
-  <h2>Exploratory Insights</h2>
-  <h3>Founding Year Range</h3>
-  <p>The dataset spans from <strong>578 AD</strong> to the <strong>20th century</strong>.</p>
+  <!-- Exploratory Insights -->
+  <section>
+    <h2>Exploratory Insights</h2>
 
-  <h3>Oldest Company and Industry</h3>
-  <p>The oldest company is <strong>Kongō Gumi</strong>, a construction firm founded in Japan in 578 AD.</p>
+    <h3>Founding Year Range</h3>
+    <p>The dataset spans from <strong>578 AD</strong> to the <strong>20th century</strong>.</p>
 
-  <h3>Most Common Industries</h3>
-  <img src="industries_bar_chart.png" alt="Most Common Industries">
-  <p>Hospitality and manufacturing are the dominant industries among the world’s oldest companies.</p>
+    <h3>Oldest Company and Industry</h3>
+    <p>The oldest company is <strong>Kongō Gumi</strong>, a construction firm founded in Japan in 578 AD.</p>
 
-  <h3>Oldest by Continent</h3>
-  <img src="continent_oldest.png" alt="Oldest Companies by Continent">
-</section>
+    <h3>Most Common Industries</h3>
+    <img src="industries_bar_chart.png" alt="Most Common Industries">
+    <p>Hospitality and manufacturing are the dominant industries among the world’s oldest companies.</p>
 
-<section class="key-takeaways">
-  <h2>Key Takeaways</h2>
-  <ul>
-    <li>Many of the oldest companies operate in stable, essential industries.</li>
-    <li>Geography plays a role: Europe and Asia are home to most of these businesses.</li>
-    <li>Long-standing tradition and family ownership are common themes.</li>
-  </ul>
-</section>
+    <h3>Oldest by Continent</h3>
+    <img src="continent_oldest.png" alt="Oldest Companies by Continent">
+  </section>
 
-<section>
-  <h2>Technology Used</h2>
-  <p><strong>SQL:</strong> JOINs, aggregations, filtering <br>
-     <strong>Python:</strong> Pandas, Matplotlib, Seaborn <br>
-     <strong>Platform:</strong> Google Colab, SQLite</p>
-  <pre><code>SELECT b.business, b.year_founded, c.category
+  <!-- Key Takeaways -->
+  <section class="key-takeaways">
+    <h2>Key Takeaways</h2>
+    <ul>
+      <li>Many of the oldest companies operate in stable, essential industries.</li>
+      <li>Geography plays a role: Europe and Asia are home to most of these businesses.</li>
+      <li>Long-standing tradition and family ownership are common themes.</li>
+    </ul>
+  </section>
+
+  <!-- Technology Used -->
+  <section>
+    <h2>Technology Used</h2>
+    <p><strong>SQL:</strong> JOINs, aggregations, filtering <br>
+      <strong>Python:</strong> Pandas, Matplotlib, Seaborn <br>
+      <strong>Platform:</strong> Google Colab, SQLite</p>
+    <pre><code>SELECT b.business, b.year_founded, c.category
 FROM businesses b
 JOIN categories c ON b.category_code = c.category_code
 ORDER BY b.year_founded ASC
 LIMIT 1;</code></pre>
-</section>
+  </section>
 
-<section>
-  <h2>Links</h2>
-  <p><a href="#">View GitHub Repository</a> | <a href="#">Open Google Colab Notebook</a> | <a href="#">Download Report (PDF)</a></p>
-</section>
-  
-<a href="portfolio/sql_projects.html"><button>← Back to SQL Projects</button></a>
+  <!-- Links -->
+  <section>
+    <h2>Links</h2>
+    <p><a href="#">View GitHub Repository</a> | <a href="#">Open Google Colab Notebook</a> | <a href="#">Download Report (PDF)</a></p>
+  </section>
 
+  <!-- Return Button -->
+  <div class="text-center">
+    <a href="portfolio/sql_projects.html" class="project-btn return-btn">← Back to SQL Projects</a>
+  </div>
 
-<footer>
-  <p>&copy; 2025 Sarah Miller | Contact: samiller1109@email.com</p>
-</footer>
+  <!-- Footer -->
+  <footer id="footer-copyright" class="footer-copyright">
+    <div class="container">
+      <div class="hm-footer-copyright text-center">
+        <p>
+          &copy; 2025 Sarah Miller | Contact: samiller1109@email.com
+        </p>
+      </div>
+    </div>
+  </footer>
 
 </body>
+
 </html>
