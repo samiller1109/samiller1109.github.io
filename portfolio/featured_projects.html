@@ -1,19 +1,203 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Featured Projects</title>
-</head>
-<body>
-  <h1>Featured Projects</h1>
-  <p>Explore featured work:</p>
-  
-  <a href="business/index.html">
-    <button>Business History SQL Explorer</button>
-  </a>
+<!doctype html>
+<html class="no-js" lang="en">
 
-  <a href="business/index.html">
-    <button>DungeonVerse (Capstone Project)</button>
-  </a>
-  
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Featured Projects | Sarah Miller</title>
+
+    <link rel="shortcut icon" type="image/icon" href="../assets/logo/favicon.png" />
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/flaticon.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootsnav.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+    <style>
+        .project-hero {
+            background: url('../images/about/welcome_banner.png') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .project-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(31, 44, 108, 0.65);
+            z-index: 1;
+        }
+
+        .project-hero .hero-text {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+        }
+
+        .project-hero .hero-text h2 {
+            font-size: 48px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .project-hero .hero-text p {
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .project-card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(182, 54, 255, 0.2);
+        }
+
+        .project-card img {
+            width: 100%;
+            max-height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .project-btn {
+            display: inline-block;
+            background-color: #b636ff;
+            color: white;
+            border: 1px solid #b636ff;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            width: 100%;
+            transition: 0.3s ease;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project-btn:hover {
+            background-color: #9f00ff;
+            border-color: #9f00ff;
+            color: #fff;
+        }
+
+        .return-btn {
+            width: 250px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="top-area">
+        <div class="header-area">
+            <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="../index.html">sarah miller</a>
+                    </div>
+                    <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li><a href="../index.html#education">education</a></li>
+                            <li><a href="../index.html#skills">skills</a></li>
+                            <li><a href="../index.html#experience">experience</a></li>
+                            <li><a href="../index.html#portfolio">portfolio</a></li>
+                            <li><a href="../index.html#contact">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="project-hero">
+        <div class="container text-center">
+            <div class="hero-text">
+                <h2>Featured Projects</h2>
+                <p>Explore featured work</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="portfolio" style="padding-top: 60px;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-6 col-xs-12">
+                    <div class="project-card">
+                        <img src="../portfolio/images/business_sql.png" alt="Business History SQL Explorer">
+                        <a href="business/index.html" class="project-btn">Business History SQL Explorer</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="project-card">
+                        <img src="../portfolio/images/dungeonverse.png" alt="DungeonVerse (Capstone Project)">
+                        <a href="business/index.html" class="project-btn">DungeonVerse (Capstone Project)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="../index.html" class="project-btn return-btn">← Return to Main Page</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer-copyright" class="footer-copyright">
+        <div class="container">
+            <div class="hm-footer-copyright text-center">
+                <p>
+                    &copy; copyright Sarah Miller. Design and developed by <a href="https://www.themesine.com/">themesine</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootsnav.js"></script>
+    <script src="../assets/js/jquery.sticky.js"></script>
+    <script src="../assets/js/progressbar.js"></script>
+    <script src="../assets/js/jquery.appear.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
 </body>
+
 </html>
