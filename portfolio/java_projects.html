@@ -19,33 +19,66 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
 
-    <style>
-        .project-btn {
-            display: inline-block;
-            background-color: #b636ff;
-            color: white;
-            border: 1px solid #b636ff;
-            padding: 12px 20px;
-            font-size: 16px;
-            border-radius: 3px;
-            width: 100%;
-            transition: 0.3s ease;
-            text-decoration: none;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-        }
+    <!-- Add this inside <style> in your <head> -->
+<!-- Add this inside <style> in your <head> -->
+<style>
+    .project-card {
+        background: #fff;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+    }
 
-        .project-btn:hover {
-            background-color: #9f00ff;
-            border-color: #9f00ff;
-            color: #fff;
-            text-decoration: none;
-        }
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(182, 54, 255, 0.2);
+    }
 
-        .return-btn {
-            width: 200px;
-            margin-top: 30px;
-        }
-    </style>
+    .project-card img {
+        width: 100%;
+        max-height: 180px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 15px;
+        transition: transform 0.3s ease;
+    }
+
+    .project-card:hover img {
+        transform: scale(1.05);
+    }
+
+    .project-btn {
+        display: inline-block;
+        background-color: #b636ff;
+        color: white;
+        border: 1px solid #b636ff;
+        padding: 12px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        width: 100%;
+        transition: 0.3s ease;
+        text-decoration: none;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        font-weight: 500;
+    }
+
+    .project-btn:hover {
+        background-color: #9f00ff;
+        border-color: #9f00ff;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .return-btn {
+        width: 250px;
+        margin-top: 30px;
+    }
+</style>
+
 </head>
 
 <body>
@@ -84,16 +117,28 @@
             </div>
             <div class="row text-center" style="margin-top: 40px;">
                 <div class="col-sm-3 col-xs-6">
-                    <a href="../calculator/index.html" class="project-btn">Calculator</a>
+                    <div class="project-card">
+                        <img src="../portfolio/images/calculator.png" alt="Calculator">
+                        <a href="../calculator/index.html" class="project-btn">Calculator</a>
+                    </div>
                 </div>
                 <div class="col-sm-3 col-xs-6">
-                    <a href="../calculator/index.html" class="project-btn">Expense Tracker CLI App</a>
+                    <div class="project-card">
+                        <img src="../portfolio/images/expense_tracker.png" alt="Expense Tracker CLI App">
+                        <a href="../calculator/index.html" class="project-btn">Expense Tracker CLI App</a>
+                    </div>
                 </div>
                 <div class="col-sm-3 col-xs-6">
-                    <a href="../calculator/index.html" class="project-btn">Student Grade Management System</a>
+                    <div class="project-card">
+                        <img src="../portfolio/images/student_grades.png" alt="Student Grade Management System">
+                        <a href="../calculator/index.html" class="project-btn">Student Grade Management System</a>
+                    </div>
                 </div>
                 <div class="col-sm-3 col-xs-6">
-                    <a href="../calculator/index.html" class="project-btn">Mini HTTP Server</a>
+                    <div class="project-card">
+                        <img src="../portfolio/images/mini_server.png" alt="Mini HTTP Server">
+                        <a href="../calculator/index.html" class="project-btn">Mini HTTP Server</a>
+                    </div>
                 </div>
             </div>
             <!-- Return Button -->
