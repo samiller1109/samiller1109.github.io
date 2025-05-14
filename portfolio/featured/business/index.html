@@ -2,191 +2,175 @@
 <html class="no-js" lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>The World’s Oldest Businesses | Sarah Miller</title>
+    <title>The World’s Oldest Businesses | Sarah Miller</title>
 
-  <link rel="shortcut icon" type="image/icon" href="../assets/logo/favicon.png" />
-  <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../assets/css/flaticon.css">
-  <link rel="stylesheet" href="../assets/css/animate.css">
-  <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../assets/css/bootsnav.css">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="shortcut icon" type="image/icon" href="../assets/logo/favicon.png" />
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/flaticon.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootsnav.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
 
-  <style>
-    .project-hero {
-      background: url('../assets/images/about/business_banner.png') no-repeat center center;
-      background-size: cover;
-      position: relative;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .project-hero::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(31, 44, 108, 0.65);
-      z-index: 1;
-    }
-    .project-hero .hero-text {
-      position: relative;
-      z-index: 2;
-      color: #fff;
-      text-align: center;
-    }
-    .project-hero .hero-text h2 {
-      font-size: 48px; font-weight: 700;
-      text-transform: uppercase; margin-bottom: 10px;
-    }
-    .project-hero .hero-text p {
-      font-size: 18px; font-weight: 300;
-      letter-spacing: 1px; text-transform: uppercase;
-    }
-    .project-card {
-      background: #fff;
-      border: 1px solid #eee;
-      border-radius: 10px;
-      padding: 30px;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    }
-    .project-card h2 {
-      color: #004080;
-      margin-top: 0;
-    }
-    .project-card img {
-      width: 100%;
-      margin: 20px 0;
-      border-radius: 6px;
-    }
-    .project-btn {
-      display: inline-block;
-      background-color: #b636ff;
-      color: white;
-      border: 1px solid #b636ff;
-      padding: 12px 20px;
-      font-size: 16px;
-      border-radius: 5px;
-      width: 250px;
-      transition: 0.3s ease;
-      text-decoration: none;
-      font-weight: 500;
-      margin: 10px auto 0;
-    }
-    .project-btn:hover {
-      background-color: #9f00ff;
-      border-color: #9f00ff;
-      color: #fff;
-    }
-    .return-btn {
-      display: block;
-      margin: 30px auto;
-    }
-  </style>
+    <style>
+        .project-hero {
+            background: url('../assets/images/about/business_banner.png') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .project-hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(31, 44, 108, 0.65);
+            z-index: 1;
+        }
+        .project-hero .hero-text {
+            position: relative; z-index: 2; color: #fff; text-align: center;
+        }
+        .project-hero .hero-text h2 {
+            font-size: 48px; font-weight: 700; text-transform: uppercase; margin-bottom: 10px;
+        }
+        .project-hero .hero-text p {
+            font-size: 18px; font-weight: 300; letter-spacing: 1px; text-transform: uppercase;
+        }
+        section.portfolio {
+            padding-top: 60px;
+        }
+        .project-btn {
+            display: inline-block;
+            background-color: #b636ff;
+            color: white;
+            border: 1px solid #b636ff;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+        .project-btn:hover {
+            background-color: #9f00ff;
+            border-color: #9f00ff;
+            color: #fff;
+        }
+        .return-btn {
+            width: 250px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 
 <body>
-  <!-- Navigation -->
-  <header class="top-area">
-    <div class="header-area">
-      <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-              <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand" href="../index.html">sarah miller</a>
-          </div>
-          <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-            <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-              <li><a href="../index.html#education">education</a></li>
-              <li><a href="../index.html#skills">skills</a></li>
-              <li><a href="../index.html#experience">experience</a></li>
-              <li><a href="../index.html#portfolio">portfolio</a></li>
-              <li><a href="../index.html#contact">contact</a></li>
-            </ul>
-          </div>
+    <!-- Navigation -->
+    <header class="top-area">
+        <div class="header-area">
+            <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="../index.html">sarah miller</a>
+                    </div>
+                    <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li><a href="../index.html#education">education</a></li>
+                            <li><a href="../index.html#skills">skills</a></li>
+                            <li><a href="../index.html#experience">experience</a></li>
+                            <li><a href="../index.html#portfolio">portfolio</a></li>
+                            <li><a href="../index.html#contact">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="project-hero">
-    <div class="container text-center">
-      <div class="hero-text">
-        <h2>The World’s Oldest Businesses</h2>
-        <p>A SQL &amp; Python Data Storytelling Project</p>
-      </div>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="project-hero">
+        <div class="container text-center">
+            <div class="hero-text">
+                <h2>The World’s Oldest Businesses</h2>
+                <p>A SQL & Python Data Storytelling Project</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Project Content -->
-  <section class="portfolio" style="padding-top:60px;">
-    <div class="container">
-      <div class="project-card">
-        <h2>Project Summary</h2>
-        <p>This project explores the longevity of historic businesses around the world using data from BusinessFinancing.co.uk. It analyzes founding years, industry trends, and regional highlights through SQL queries and Python visualizations.</p>
+    <!-- Content Section (using same portfolio container) -->
+    <section class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Project Summary</h2>
+            <p>This project explores the longevity of historic businesses around the globe using data from BusinessFinancing.co.uk. It analyzes industry distributions, continental trends, and founding year timelines with SQL and Python visualizations.</p>
 
-        <h3>Interactive Timeline</h3>
-        <img src="timeline.png" alt="Timeline of founding years">
+            <h2>Key Visualizations</h2>
+            <img src="timeline.png" alt="Timeline of Founding Years">
+            <p><em>Timeline showing the earliest and latest founding years.</em></p>
 
-        <h3>Most Common Industries</h3>
-        <img src="industries_bar_chart.png" alt="Bar chart of industries">
+            <img src="industries_bar_chart.png" alt="Most Common Industries">
+            <p><em>Bar chart of the most common industries among the oldest companies.</em></p>
 
-        <h3>Oldest by Continent</h3>
-        <img src="continent_oldest.png" alt="Oldest businesses by continent">
+            <img src="continent_oldest.png" alt="Oldest Companies by Continent">
+            <p><em>Scatterplot of the oldest companies per continent.</em></p>
 
-        <h3>Sample SQL Query</h3>
-        <pre><code>SELECT b.business, b.year_founded, c.category
+            <h2>Sample SQL Query</h2>
+            <pre><code>SELECT b.business, b.year_founded, c.category
 FROM businesses b
 JOIN categories c ON b.category_code = c.category_code
 ORDER BY b.year_founded ASC
 LIMIT 1;</code></pre>
 
-        <h3>Key Takeaways</h3>
-        <ul>
-          <li>Normalized multi-table design in SQLite</li>
-          <li>Efficient in-memory querying of large CSV datasets</li>
-          <li>Data storytelling with Seaborn &amp; Matplotlib</li>
-        </ul>
+            <h2>What I Learned</h2>
+            <ul>
+              <li>Designing and querying a normalized in-memory SQLite database.</li>
+              <li>Joining and aggregating multi-table CSV data efficiently.</li>
+              <li>Communicating data insights with Seaborn and Matplotlib.</li>
+            </ul>
+          </div>
+        </div>
 
-        <h3>Technology Used</h3>
-        <p><strong>Python:</strong> Pandas, SQLite3, Seaborn, Matplotlib<br>
-           <strong>SQL:</strong> In-memory SQLite queries<br>
-           <strong>Platform:</strong> Google Colab</p>
+        <div class="row text-center">
+          <div class="col-xs-12">
+            <a href="../featured_projects.html" class="project-btn return-btn">← Back to Featured Projects</a>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <a href="../featured_projects.html" class="project-btn return-btn">← Back to Featured Projects</a>
-    </div>
-  </section>
+    <!-- Footer -->
+    <footer id="footer-copyright" class="footer-copyright">
+      <div class="container">
+        <div class="hm-footer-copyright text-center">
+          <p>&copy; 2025 Sarah Miller. Design and developed by <a href="https://www.themesine.com/">themesine</a></p>
+        </div>
+      </div>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="footer-copyright">
-    <div class="container text-center">
-      <p>&copy; 2025 Sarah Miller. Design and developed by <a href="https://www.themesine.com/">themesine</a></p>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="../assets/js/jquery.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <script src="../assets/js/bootstrap.min.js"></script>
-  <script src="../assets/js/bootsnav.js"></script>
-  <script src="../assets/js/jquery.sticky.js"></script>
-  <script src="../assets/js/progressbar.js"></script>
-  <script src="../assets/js/jquery.appear.js"></script>
-  <script src="../assets/js/owl.carousel.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-  <script src="../assets/js/custom.js"></script>
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootsnav.js"></script>
+    <script src="../assets/js/jquery.sticky.js"></script>
+    <script src="../assets/js/progressbar.js"></script>
+    <script src="../assets/js/jquery.appear.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
 </body>
+
 </html>
